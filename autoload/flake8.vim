@@ -109,10 +109,10 @@ function! s:Flake8()  " {{{
     " read config
     call s:Setup()
 
-    if !executable(s:flake8_cmd)
-        echoerr "File " . s:flake8_cmd . " not found. Please install it first."
-        return
-    endif
+"    if !executable(s:flake8_cmd)
+"        echoerr "File " . s:flake8_cmd . " not found. Please install it first."
+"        return
+"    endif
 
     " clear old
     call s:UnplaceMarkers()
